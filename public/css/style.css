@@ -1,0 +1,819 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap);
+
+.row{clear:both;padding:0;margin:0;zoom:1}
+.col{display:block;float:left;margin:0}
+.col-center{display:block;float:left;margin:0% 25%}
+.col-center-80{width:80%;}
+.col:first-child{margin-left:0}
+.row:after,.row:before{content:"";display:table}
+.row:after{clear:both}
+.col-5-6{width:83.33%}
+.col-1-6{width:16.66%}
+.col-4-5{width:80%}
+.col-3-5{width:60%;width:40%}
+.col-1-5{width:20%}
+.col-3-4{width:75%}
+.col-1-2,.col-2-4,.col-3-6{width:50%}
+.col-1-4{width:25%}
+.col-1-4-center{width:50%}
+.col-2-3,.col-4-6{width:66.66%}
+.col-1-3,.col-2-6{width:33.33%}
+.col-1-1,.col-4-4{width:100%}
+.col-1-7{width:14.28%}
+.col-7-8{width:87.5%}
+.col-5-8{width:62.5%}
+.col-3-8{width:37.5%}
+.col-1-8{width:12.5%}
+@media only screen and (max-width:1095px){
+    .col{margin:0}
+    .col-1-2,.col-1-3,.col-1-4,.col-2-3,.col-2-4,.col-3-3,.col-3-4,.col-4-4{width:100%}
+    .col-1-5,.col-1-6{width:50%}
+}
+
+
+html{
+    scroll-behavior:smooth
+}
+body{
+    color:#444;
+    font-family:Open Sans,sans-serif;margin:0;
+    background:#fff;
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased
+}
+
+
+ul{
+  list-style-type:none;
+  -webkit-padding-start:0;
+  padding-inline-start:0
+}
+h1,h2,h3,h4,h5,p,ul{
+  display:block;
+  -webkit-margin-before:0;
+  margin-block-start:0;-webkit-margin-after:0;margin-block-end:0;-webkit-margin-start:0;margin-inline-start:0;-webkit-margin-end:0;margin-inline-end:0
+}
+h1,h2,h3,h4,h5,p{cursor:default}
+.left{text-align:left}
+.right{text-align:right}
+.center{text-align:center}
+h1,h2,h3,h4,h5{text-align:left;font-weight:700;position:relative;cursor:default}
+h1{color:#fff}
+h2,h3,h4,h5{color:#ccc}
+h1{font-size:48px;line-height:48px}
+h2{font-size:40px;line-height:40px}
+h3{font-size:32px;line-height:32px}h4{font-size:24px;line-height:24px}h5{font-size:16px;line-height:16px}
+h2:after,h3:after{content:"";height:3px;width:60px;position:absolute;top:0;left:0;background:linear-gradient(90deg,#00629d,#00b8b4)}
+h2:after{margin-top:50px}
+h3:after{margin-top:40px}
+h2.center:after{left:50%;margin-top:50px;margin-left:-30px}
+h3.center:after{left:50%;margin-top:42px;margin-left:-30px}
+h2.center.title{color:#fff}
+h2.center.title:after{opacity:0}
+
+.pag-title{padding:120px 0 40px 0}.modal h3:after{opacity:0}
+a,a:after,a:hover,button,button:hover,input[type=submit]{text-decoration:none;font-family:Open Sans,sans-serif;transition:all .2s ease-in-out;cursor:pointer!important;outline:none}
+button[type=reset]{border:none;margin-left:10px;background:none;font-size:14px;padding:8px 16px!important;color:#fff;font-weight:600;box-shadow:none!important}
+button[type=reset]:hover{background-color:#e5e5e5!important;color:#00b8b4}
+.btn-container{width:100%;height:auto;padding-top:40px}
+.btn-container-form{width:100%;height:auto;padding-top:0;text-align:left}
+.btn{display:inline-flex;text-align:center;text-decoration:none;font-weight:600;border:2px solid transparent;border-radius:60px;box-shadow:2px 2px 4px rgba(0,0,0,.16);cursor:pointer}
+.btn,.btn:hover{transition:all .25s!important}
+.btn-sm{padding:9px 30px;font-size:16px}
+.btn-lg{padding:11px 50px;font-size:18px}
+.btn-pri{background:#00b8b4;border-color:#00b8b4;color:#fff}
+.btn-pri:hover{background:#00629d;border-color:#00629d}
+.btn-sec{background:transparent;border-color:#00b8b4;color:#00b8b4}
+.btn-sec:hover{background:#00629d;border-color:#00629d;color:#fff}
+:-webkit-input-placeholder{color:#888}
+:-ms-input-placeholder{color:#888}
+::-moz-placeholder{color:#888}
+::placeholder{color:#888}
+.input-white::-moz-placeholder{color:hsla(0,0%,100%,.5)}
+.input-white::placeholder{color:hsla(0,0%,100%,.5)}
+.input-white:-webkit-input-placeholder{color:hsla(0,0%,100%,.5)}
+.input-white:-ms-input-placeholder{color:hsla(0,0%,100%,.5)}
+
+p{line-height:26px}
+.text-high{padding:0 120px}
+.text-sm{font-size:16px;font-weight:400;line-height:26px}
+.text-md{font-size:24px;font-weight:400;line-height:34px}
+.text-lg{font-size:32px;font-weight:600;line-height:42px}
+.text-xlg{font-size:40px;font-weight:600;line-height:50px}
+.text-lg.white,.text-md.white,.text-sm.white,.text-xlg.white{color:#fff}
+.pad-sm{padding:20px 0}
+.pad-top-sm{padding-top:20px}
+.pad-md{padding:40px 0}
+.pad-top-md{padding-top:40px;}
+.pad-lg{padding:80px 0}
+.pad-top-lg{padding-top:80px}
+
+section{width:100%}
+.container{margin:0 auto;width:90%;max-width:1200px}
+.header-color,.header-hover,.header-white{transition: .25s ease-in-out;}
+.header{width:100%;position:relative;top:0;z-index:20;}
+.header-content{margin:0 auto;width:90%;max-width:1200px;height:80px;}
+.header-content-logo{width:auto;float:left;padding:14px 0 11px 0;margin-right:37px;color: white}
+.header-content-logo a img{width:auto;height:60px}
+.header-content-nav{float:left}
+.header-content-nav-item{float:left;margin-left:5px}
+.header-content-nav-item a{display:block;text-decoration:none;font-size:14px;font-weight:400;padding:30px 15px 29px 15px;border-bottom:3px solid transparent;color:#fff}
+.header-color .logo,.header-hover .logo,.header-white .logo{display:block;width:176px;height:50px}
+.header-white{background-image: url("../imagens/fundo.jpg");}
+.logo{background-size:176px 50px;background-repeat:no-repeat;color:#FAFAFA;}
+.header-white .header-content{border-bottom:1px solid hsla(0,0%,100%,.1)}
+.header-color,.header-hover{background-color:#fff;box-shadow:1px 1px 4px rgba(0,0,0,.32)}
+.header-color .logo,.header-hover .logo{background-image:url("imagens/logo.png");background-size:176px 50px;background-repeat:none}
+
+
+.header-content-right{float:right;display:block}
+.header-content-right-item{float:left;margin-left:0;padding:27px 0 27px 16px}
+.header-content-right-item a{text-decoration:none;color:#fff;font-size:14px}
+.header-color .header-content-right a,.header-hover .header-content-right a{text-decoration:none;color:#fff;font-size:14px}
+.header-color .header-content-right a:hover,.header-hover .header-content-right a:hover{text-decoration:none;font-size:14px}
+
+.menu-mobile {
+  color: white;
+  float:left;
+  text-align: center;
+  margin-top:-0.25em;
+}
+
+.botao-mobile{
+  position: relative;
+  padding-top:1em;
+}
+
+.botao-mobile a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnavMobile {
+  overflow: hidden;
+  background-color: transparent;
+  position: relative;
+  
+}
+
+.topnavMobile #myLinksMenu {
+  display: none;
+  background-image: url('../imagens/fundo.jpg');
+}
+
+.topnavMobile a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.botao-mobile a.iconMobile {
+  float:right;
+  background: transparent;
+  display: none;
+}
+
+.topnavMobile a:hover {
+  background-color: #D8D8D8;
+  color: black;
+}
+
+@media only screen and (max-width:1100px){
+  .botao-mobile a.iconMobile {
+    display:block;
+    
+  }
+}
+
+
+a.btn-social{vertical-align:middle;}
+a.btn-social,button.btn-buscar{display:inline-block;width:24px;height:24px;background-size:24px 24px;}
+
+.buscar-content{width:90%;max-width:1200px;margin:0 auto;opacity:1;display:block;box-sizing:content-box}
+.buscar-content input{width:100%;float:left;padding:24px 26px;box-sizing:border-box;font-size:16px;font-weight:600;color:#00629d;border:none;border-bottom:2px solid #00b8b4;background-color:hsla(0,0%,100%,.85);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);outline:none;font-family:Open Sans,sans-serif;box-shadow:0 4px 4px rgba(0,0,0,.08)}
+
+.footer-direitos-reservados{width:100%;background:rgba(0,0,0,.25)}
+.footer-direitos-reservados-content{margin:0 auto;width:90%;max-width:1200px;padding:20px 0}
+.footer-direitos-reservados-content p{text-align:center;font-size:12px;color:hsla(0,0%,100%,.5)}
+.newsletter{width:100%;box-sizing:content-box}
+.newsletter input{margin-top:8px}
+.newsletter input[type=email]{display:block;width:100%;padding:10px 0;font-size:14px;color:#fff;border:none;border-bottom:1px solid #fff;background-color:transparent;outline:none;border-radius:0;box-sizing:border-box}
+.newsletter input[type=email]:focus{border-bottom:1px solid #00629d;background:transparent}
+.newsletter button{display:block;width:100%;padding:10px 40px;background:transparent;color:#fff;font-size:16px;border:2px solid #fff;margin-top:20px}
+.newsletter button:hover{background:#fff;color:#00b8b4;cursor:pointer}
+
+h5:before{margin-right:10px;top:5px;position:relative}
+
+
+.slide{width:100%;min-height:80%;box-sizing:border-box;}
+.slideshow-container{
+  -webkit-animation:color-change-2x 6s linear infinite alternate both;animation:color-change-2x 6s linear infinite alternate both;width:100%
+}
+.mySlides{margin:0 auto;width:100%;max-width:100%;min-height:590px;}
+.mySlides-content{margin:0 auto;width:100%;max-width:1200px;padding:80px 0 80px 0;}
+.slide-1{background:url(imagens/fundo.jpg) no-repeat;background-size:1920px auto;background-position:top}
+.slide-2{background:url(imagens/fundo.jpg) no-repeat;background-size:1920px auto;background-position:top;display:none}
+.slide-3{background:url(../imagens/fundo.jpg) no-repeat;background-size:1920px auto;background-position:top;display:none}
+
+.carrousel-content-item-cta ul{width:100%;display:normal}
+.carrousel-content-item-cta ul li{display:inline-block;margin-right:20px}
+.carrousel-content-item-grafico img{width:100%;max-width:580px;max-height:370px}
+.slide h1{color:#fff;padding:20px 0 0 0}
+.slide h4{color:hsla(0,0%,100%,.5);font-weight:400}
+.carrousel-content-item-cta p{font-size:20px;color:#fff;padding:80px 0 80px 0;line-height:36px}
+.carrousel-content-item-cta ul li a{border:2px solid #fff;color:#fff;display:block;box-sizing:border-box;font-size:18px;padding:12px 20px;border-radius:60px;margin-right:20px;top:20px;width:100%}
+.carrousel-content-item-cta a.btn-destaque{border:2px solid #00b8b4;background-color:#00b8b4;color:#fff}
+.carrousel-content-item-cta a:hover{border:2px solid #fff;background-color:#fff;color:#00b8b4}
+.next,.prev{display:none;cursor:pointer;position:absolute;top:310px;width:auto;padding:16px;margin-top:-22px;color:hsla(0,0%,100%,.1);font-weight:400;font-size:32px;transition:.6s ease;border-radius:0 3px 3px 0}
+.next{right:0;border-radius:3px 0 0 3px}
+.next:hover,.prev:hover{color:hsla(0,0%,100%,.75)}
+.slide-button{position:relative;top:-50px;z-index:10}
+
+@media only screen and (max-width:1100px){
+  .mySlides-content{
+    padding: 40px 0 40px 0;
+  }
+
+  .slide h1{
+    text-align: center;
+    padding:10px 0 0 0;
+  }
+  .carrousel-content-item-cta p{
+    text-align: center;
+    padding:80px 10px 80px 10px;
+    margin:0px 10px; 
+    line-height:36px;
+  }
+
+}
+
+.dot{cursor:pointer;height:13px;width:13px;margin:0 8px;background-color:hsla(0,0%,100%,.25);border-radius:50%;display:inline-block;transition:background-color .6s ease}
+.active,.dot:hover{background-color:#fff}
+.slide-live{background:url(imagens/fundo.jpg) no-repeat;background-size:1920px auto;background-position:top;display:none}
+
+
+#nav-icon4 span:first-child{top:0;transform-origin:left center}
+#nav-icon4 span:nth-child(2){top:18px;transform-origin:left center}
+#nav-icon4 span:nth-child(3){top:36px;transform-origin:left center}
+#nav-icon4.open span:first-child{transform:rotate(45deg);top:-3px;left:8px}
+#nav-icon4.open span:nth-child(2){width:0;opacity:1}
+#nav-icon4.open span:nth-child(3){transform:rotate(-45deg);top:36px;left:8px}
+.menu-mobile-social a{width:32px;height:32px;background-size:32px 32px}
+
+.footer{background:linear-gradient(90deg,rgba(0,78,137,.92),rgba(0,167,163,.92)),url(../img/bg-footer.4b41f86c.svg);background-size:100% auto;background-repeat:no-repeat;background-position:bottom}
+.footer-content{margin:0 auto;width:90%;max-width:1200px;height:auto;padding:80px 0 60px 0;color:#D8D8D8}
+.footer-content a{color:#D8D8D8}
+.footer-content a:hover{color:gray}
+.footer hr{border:none;border-bottom:1px solid hsla(0,0%,100%,.25);height:0;display:block;margin:40px 0 45px 0;overflow:hidden}
+
+
+#home-servicos{padding:80px 0;background:#fff}
+.servicos-content{padding-top:40px;transition:transform .2s}
+.servicos-content ul{width:100%;display:block;}
+.servicos-content li{display:inline-block;width:20%;}
+.servicos-content-item{display:block;text-align:center;transition:.3s}
+.servicos-content-item span{display:block;font-size:16px;font-weight:600;color:#151515;}
+.servicos-content-item span img{height:84px;padding-bottom:20px}
+.ico-servicos{height:84px;width:100%;display:block;margin-bottom:20px}
+
+
+#home-servicos2{padding:80px 0;background:#fff}
+.servicos-content2{padding-top:40px;transition:transform .2s}
+.servicos-content2 ul{width:100%;display:block;}
+.servicos-content2 li{display:inline-block;width:50%;padding:20px;margin:20px;border: solid 2px #A4A4A4;border-radius: 50px;}
+.servicos-content-item2{display:block;text-align:center;transition:.3s}
+.servicos-content-item2 span{display:block;font-size:16px;font-weight:600;color:#2E2E2E;}
+
+
+#home-precisa-de-um-orcamento{background:linear-gradient(90deg,#00629d,#00b8b4)}
+#home-solicitar-atendimento-personalizado{background:#fff}
+
+#formSolicitarAtendimento .modal-body{padding:40px}
+#formSolicitarAtendimento .formulario span{float:left;font-size:12px;color:#fff}
+#formSolicitarAtendimento .modal a.close{right:20px}
+.modal a.close{background:#fff;border-radius:8px}
+.modal a.close,.modal a.close:hover{display:block;float:right;position:relative;margin-top:-50px;box-shadow:4px 4px 16px rgba(0,0,0,.32)}
+.modal a.close:hover{background:#f5f5f5;border-radius:28px}
+.modal a.close:hover span.close{color:#666}
+#home-solicitar-atendimento-personalizado .modal a.close{display:block;background:#fff;float:right;position:relative;margin-top:-90px;margin-right:-40px;border-radius:8px;box-shadow:4px 4px 16px rgba(0,0,0,.32)}
+#home-solicitar-atendimento-personalizado .modal a.close:hover{border-radius:28px}
+.modal .close{line-height:20px;font-size:30px;padding:3px 5px 5px 5px;color:#666;display:block}
+.box-cards{overflow-y:scroll;overflow-y:hidden}
+.collapse{display:none}
+.collapse.in{display:block;margin-bottom:20px}
+.collapsing{position:relative;height:0;overflow:hidden;transition-property:height,visibility;transition-duration:.35s;transition-timing-function:ease}
+.btn-collapse{color:#888;background:transparent;cursor:pointer;padding:12px;width:100%;border:3px solid #ccc;border-radius:10px;text-align:center;outline:none;font-size:20px;font-weight:800;transition:.4s;text-transform:uppercase;margin-bottom:20px}
+.btn-collapse:after{content:url(../img/ico-mais.bda47acb.svg);position:relative;float:right;top:2px;right:4px}
+.btn-clinicas-active,.collapse-clinicas:hover{background:#00629d;border:3px solid #00629d;color:#fff}
+.btn-hospitais-active,.collapse-hospitais:hover{background:#00b8b4;border:3px solid #00b8b4;color:#fff}
+.btn-operadoras-active,.collapse-operadoras:hover{background:#444;border:3px solid #444;color:#fff}
+.btn-clinicas-active:after,.btn-hospitais-active:after,.btn-operadoras-active:after{content:url(../img/ico-menos.2cf6f9b4.svg);position:relative;float:right;top:-6px;right:4px}
+
+.painel h4{display:block;color:#888;padding:10px 10px 0 10px;margin-bottom:10px}
+.box-checkbox{display:block;position:relative;padding-left:35px;cursor:pointer;font-size:22px;float:right;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.box-checkbox input{position:absolute;opacity:0;cursor:pointer;height:0;width:0}
+.checkmark{position:absolute;top:0;right:0;height:18px;width:18px;background-color:transparent}
+.box-checkbox:hover input~.checkmark{background-color:#fff}
+.box-checkbox input:checked~.checkmark{background-color:transparent}
+.checkmark:after{content:"";position:absolute;display:none}
+.box-checkbox input:checked~.checkmark:after{display:block}
+.box-checkbox .checkmark:after{left:5px;top:-5px;width:8px;height:16px;border:solid #28cd41;border-width:0 3px 3px 0;transform:rotate(45deg)}
+.label-card{display:block;background:#fff;padding:20px;margin:10px;height:130px;max-height:130px;border-radius:10px;cursor:pointer;transition:transform .5s;border:1px solid #eee}
+.label-card:hover{transform:scale(1.1);border:1px solid #e5e5e5;background:#e5e5e5;transition:transform .5s}
+.container-img{display:flex}
+.container-text{font-size:14px;height:100%;height:84px;display:flex;align-items:flex-end}
+.label-card:hover span{-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+
+#solicitar-atendimento-personalizado .modal-content{padding:30px 40px 20px 40px;background:#f5f5f5}
+#solicitar-atendimento-personalizado .modal-content h5{color:#888;margin-bottom:20px}
+#solicitar-atendimento-personalizado .modal-content h5.titulo{color:#444}
+#solicitar-atendimento-personalizado .modal-content ul li{margin-bottom:10px}
+
+.close:focus,.close:hover{color:#000;text-decoration:none;cursor:pointer}
+.itens-selecionados{padding:0 20px}
+.itens-selecionados h5{color:#888}
+.itens-selecionados-tags{width:100%;height:auto;padding:10px;margin-top:10px;display:block;text-align:left!important;float:left!important}
+.itens-selecionados-tags span{background:#00629d;padding:3px 5px;border-radius:5px;margin:0 5px 5px 0;display:inline-block;color:#fff!important;font-size:12px;float:none}
+
+#home-quem-somos{background:#fff;background-size:1920px;background-attachment:fixed;background-position:50%;background-repeat:no-repeat;padding:80px 0;box-shadow:-2px -2px 16px rgba(0,0,0,.08)}
+#home-quem-somos h2{padding-bottom:10px;color:black}
+
+@media only screen and (max-width:1100px){
+  .col-center-80{width:95%;}
+}
+
+
+
+.logo-sticky{position:absolute;display:block;width:100px;height:100px;left:50%;margin-left:-45px;margin-top:-125px;background:url(../img/logo-sticky.8e079cee.webp);background-size:100px 100px;background-repeat:none}
+#home-noticias{padding:80px 0;background:#f5f5f5}
+#home-noticias h5{padding-bottom:10px;color:#ccc}
+.noticia{margin:0 10px 0 10px;padding:20px 20px 0 20px;transition:.25s;height:480px;border-bottom:3px solid #fff;border-radius:5px;background:#fff}
+.noticia:hover{transition:.25s;box-shadow:4px 4px 16px rgba(0,0,0,.32);border-bottom:3px solid #00b8b4}
+.noticia-img{max-height:220px}
+.noticia-img img{width:100%;height:220px}
+.noticia-tag span{display:inline-block;margin-top:10px;padding:4px 8px;color:#444;background:#f5f5f5;font-size:12px;margin-right:10px}
+.noticia-titulo{padding:10px 0}
+.noticia-titulo h5{font-size:16px;line-height:20px;color:#444!important}
+.noticia-info-autor{color:#00b8b4;font-size:12px;margin-right:10px}
+.noticia-info-autor:after{content:"|";margin-left:10px;color:#ccc}
+.noticia-info-data{color:#888;font-size:12px}
+.noticia-descricao{color:#444;font-size:14px;padding-top:20px}
+
+#home-cases h5{color:#ccc;padding-bottom:10px}
+.cases-card{margin:20px 20px 0 20px;text-align:center}
+.cases-depoimento{background:#fff;-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);padding:40px;height:150px;max-height:150px;font-size:14px;line-height:24px;border-radius:10px;color:#444;text-align:left;box-shadow:0 8px 16px rgba(0,0,0,.08)}
+.cases-depoimento:after{content:"";position:absolute;display:block;width:0;z-index:1;border-style:solid;border-color:#fff transparent;border-width:16px 16px 0;bottom:-16px;left:58px;margin-left:-16px}
+.cases-user-img{float:left;margin:20px 20px 0 20px}
+.cases-user-img img{height:64px;padding:10px}
+.cases-user-desc{float:left;padding:45px 10px 0 10px}
+.cases-user-desc .cases-cliente{color:#00b8b4;font-size:14px;font-weight:600;line-height:20px}
+.cases-user-desc .cases-instituicao{color:#888;font-size:12px;line-height:20px}
+#home-parceiros{padding:80px 0;background:#fff;border-top:1px solid #d5d5d5}
+#home-parceiros h4{color:#888}
+.parceiros-logo{max-height:64px;margin-top:20px}
+.pag-quem-somos{background:#fff}
+.pag-quem-somos .pag-title{background:linear-gradient(90deg,rgba(0,78,137,.92),rgba(0,167,163,.92)),url(../img/bg-quem-somos.a42c4a5d.webp);background-size:100% auto;background-repeat:no-repeat;background-position:50%;-webkit-animation:animatedBackground 10s linear alternate;animation:animatedBackground 10s linear alternate}
+#apresentacao h4{color:#888}
+#minha-clinica-planos{background:url(../img/bg-planos.bbf878df.webp);background-size:100% 800px;height:auto;width:100%}
+#minha-clinica-planos h1{font-size:36px;font-weight:600;padding:200px 20px 0 0;cursor:default}
+#minha-clinica-planos p,#minha-clinica-planos span{cursor:default}
+
+#minha-clinica-planos .card-plano:hover{background-color:#fff;transition:all .2s ease-in-out;transform:scale(1.05)!important}
+#minha-clinica-planos .card-plano:hover .teste-gratis-especialista span{background-color:#fff;color:#fff;transition:all .2s ease-in-out}
+#minha-clinica-planos .card-plano header{max-height:138px;height:138px}
+#minha-clinica-planos .header-plano{color:#fff;font-size:20px;font-weight:600;padding:20px 0}
+#minha-clinica-planos .tipo-plano{color:#fff;font-size:24px;font-weight:800;padding:0 70px}
+#minha-clinica-planos .tipo-plano-personalizado{color:#fff;font-size:16px;font-weight:0;padding:20px 20px 40px 20px}
+#minha-clinica-planos .valor-de{color:#888;font-size:16px;font-weight:600;text-decoration:line-through;padding-top:10px;min-height:26px}
+#minha-clinica-planos .fidelidade{color:#888;font-size:14px;font-weight:600;text-decoration:none;padding:0;opacity:1;height:26px;padding:20px 10px}
+#minha-clinica-planos .valor-plano{color:#f47a20;font-size:64px;line-height:48px;font-weight:800;padding:10px 0 0 0}
+#minha-clinica-planos .valor-plano span{font-size:30px}
+#minha-clinica-planos .desc-plano-perso{color:#444;padding:10px 110px 30px 50px;font-weight:600;text-align:left}
+#minha-clinica-planos .contato-especialista{color:#f47a20;font-weight:800;padding:20px 20px}
+#minha-clinica-planos .contato-especialista span{font-size:28px}
+#minha-clinica-planos .boneca{background:url(../img/boneca.5b73eff2.png);background-size:270px 240px;background-position:100% 0;background-repeat:no-repeat;height:240px;padding:0;pointer-events:none;margin-top:-121px}
+#minha-clinica-planos .desconto{position:absolute;right:-2px;top:130px;display:block;height:56px;width:56px;background:url(../img/10-percent.5be80efd.png);background-size:56px 56px;background-position:top;background-repeat:no-repeat}
+#minha-clinica-planos .mensal{font-size:14px;height:26px;color:#f47a20;font-weight:600}
+#minha-clinica-planos .desc-plano{color:#444;padding:20px 50px;font-weight:600}
+#minha-clinica-planos .card-plano a{background:#f47a20;border:none;padding:17px 0;display:block!important;border-top-left-radius:0!important;border-top-right-radius:0!important;border-bottom-right-radius:24px!important;border-bottom-left-radius:24px!important}
+#minha-clinica-planos .card-plano a:hover{background-color:#00629d;border:none}
+#minha-clinica-planos .teste-gratis span{display:inline-block;padding:10px 30px;background-color:#f1a463;color:#fff;border-radius:8px;font-size:16px;border:none;font-weight:600}
+#minha-clinica-planos .img-user{background:url(../img/usuarios.5f7b433d.png);position:relative;background-size:250px 110px;background-position:top;background-repeat:no-repeat;min-height:110px;height:auto}
+#minha-clinica-planos .teste-gratis-especialista span{display:block;padding:10px 20px;background-color:#f5f5f5;color:#f5f5f5;border-radius:8px;font-size:16px;border:none;margin:10px 0 0 0;font-weight:600;margin-bottom:20px;transition:all .2s ease-in-out}
+#minha-clinica-planos .obs{color:#fff!important;padding:20px 20px 80px 20px}
+#minha-clinica-planos .btn-position{position:relative;right:15px;width:50%}
+#minha-clinica-planos a.teste-gratis:hover{background:#00b8b4;color:#fff}
+#minha-clinica-planos a.teste-gratis:before{margin-right:10px;top:6px;position:relative}
+#minha-clinica-planos .btn-container{margin-top:0;padding:0 0 80px 0!important}
+#formPlanos .modal-body{padding:40px}
+#formPlanos .formulario span{float:left;font-size:12px;color:#fff}
+#formPlanos a.close{display:block;background:#fff;float:right;position:relative;margin-top:-96px;right:-40px;border-radius:8px;box-shadow:4px 4px 16px rgba(0,0,0,.32)}
+#formPlanos a.close:hover{border-radius:28px}
+#formPlanos .modal-dialog{position:relative;width:480px;height:740px;margin:0 auto;top:50%;margin-top:-370px}
+
+#timeline{background:linear-gradient(90deg,#00629d,#00b8b4);position:relative;padding:80px 0}
+#timeline:after{content:"";width:4px;height:100%;position:absolute;display:block;background:#fff;top:0;left:50%;margin-left:-2px}
+.timeline-item-content{padding:0}
+.timeline-item-content p{text-align:justify;color:#fff}
+.timeline-item-content h4{color:#fff;padding-bottom:20px}
+.timeline-card{width:40%;display:block;padding:20px;border-radius:5px;background:rgba(0,0,0,.25);box-shadow:4px 4px 16px rgba(0,0,0,.32);border:1px solid hsla(0,0%,100%,.2)}
+.card-left{float:left;position:relative}
+.card-left h4{text-align:right}
+.card-left:after{content:"";width:15%;height:4px;background:#fff;display:block;position:absolute;left:100%;top:50%}
+.card-right{float:right;position:relative}
+.card-right h4{text-align:left}
+.card-right:before{content:"";width:15%;height:4px;background:#fff;display:block;position:absolute;right:100%;top:50%}
+.nosso-negocio h5,.nosso-proposito h5{color:#888;padding-bottom:10px}
+.nosso-negocio h5{padding-top:150px}
+.nosso-proposito h5{padding-top:180px}
+.nosso-negocio p,.nosso-proposito p{padding-right:100px}
+span.nosso-negocio{background-image:url(../img/img-nosso-negocio.e16302a0.svg);background-position:100%}
+span.nosso-negocio,span.nosso-proposito{height:400px;will-change:100%;display:block;background-size:auto 400px;background-repeat:no-repeat}
+span.nosso-proposito{background-image:url(../img/img-nosso-proposito.846164d4.svg);background-position:0}
+
+
+
+
+
+#minha-clinica-planos .card-plano:hover{background-color:#fff;transition:all .2s ease-in-out;transform:scale(1.05)!important}
+#minha-clinica-planos .card-plano:hover .teste-gratis-especialista span{background-color:#fff;color:#fff;transition:all .2s ease-in-out}
+#minha-clinica-planos .card-plano header{max-height:138px;height:138px}
+#minha-clinica-planos .header-plano{color:#fff;font-size:20px;font-weight:600;padding:20px 0}
+#minha-clinica-planos .tipo-plano{color:#fff;font-size:24px;font-weight:800;padding:0 70px}
+#minha-clinica-planos .tipo-plano-personalizado{color:#fff;font-size:16px;font-weight:0;padding:20px 20px 40px 20px}
+#minha-clinica-planos .valor-de{color:#888;font-size:16px;font-weight:600;text-decoration:line-through;padding-top:10px;min-height:26px}
+#minha-clinica-planos .fidelidade{color:#888;font-size:14px;font-weight:600;text-decoration:none;padding:0;opacity:1;height:26px;padding:20px 10px}
+#minha-clinica-planos .valor-plano{color:#f47a20;font-size:64px;line-height:48px;font-weight:800;padding:10px 0 0 0}
+#minha-clinica-planos .valor-plano span{font-size:30px}
+#minha-clinica-planos .desc-plano-perso{color:#444;padding:10px 110px 30px 50px;font-weight:600;text-align:left}
+#minha-clinica-planos .contato-especialista{color:#f47a20;font-weight:800;padding:20px 20px}
+#minha-clinica-planos .contato-especialista span{font-size:28px}
+#minha-clinica-planos .boneca{background:url(../img/boneca.5b73eff2.png);background-size:270px 240px;background-position:100% 0;background-repeat:no-repeat;height:240px;padding:0;pointer-events:none;margin-top:-121px}
+#minha-clinica-planos .desconto{position:absolute;right:-2px;top:130px;display:block;height:56px;width:56px;background:url(../img/10-percent.5be80efd.png);background-size:56px 56px;background-position:top;background-repeat:no-repeat}
+#minha-clinica-planos .mensal{font-size:14px;height:26px;color:#f47a20;font-weight:600}
+#minha-clinica-planos .desc-plano{color:#444;padding:20px 50px;font-weight:600}
+#minha-clinica-planos .card-plano a{background:#f47a20;border:none;padding:17px 0;display:block!important;border-top-left-radius:0!important;border-top-right-radius:0!important;border-bottom-right-radius:24px!important;border-bottom-left-radius:24px!important}
+#minha-clinica-planos .card-plano a:hover{background-color:#00629d;border:none}
+#minha-clinica-planos .teste-gratis span{display:inline-block;padding:10px 30px;background-color:#f1a463;color:#fff;border-radius:8px;font-size:16px;border:none;font-weight:600}
+#minha-clinica-planos .img-user{background:url(../img/usuarios.5f7b433d.png);position:relative;background-size:250px 110px;background-position:top;background-repeat:no-repeat;min-height:110px;height:auto}
+#minha-clinica-planos .teste-gratis-especialista span{display:block;padding:10px 20px;background-color:#f5f5f5;color:#f5f5f5;border-radius:8px;font-size:16px;border:none;margin:10px 0 0 0;font-weight:600;margin-bottom:20px;transition:all .2s ease-in-out}
+#minha-clinica-planos .obs{color:#fff!important;padding:20px 20px 80px 20px}
+#minha-clinica-planos .btn-position{position:relative;right:15px;width:50%}
+#minha-clinica-planos a.teste-gratis:hover{background:#00b8b4;color:#fff}
+#minha-clinica-planos a.teste-gratis:before{margin-right:10px;top:6px;position:relative}
+#minha-clinica-planos .btn-container{margin-top:0;padding:0 0 80px 0!important}
+
+
+#formPlanos .modal-body{padding:40px}
+#formPlanos .formulario span{float:left;font-size:12px;color:#fff}
+#formPlanos a.close{display:block;background:#fff;float:right;position:relative;margin-top:-96px;right:-40px;border-radius:8px;box-shadow:4px 4px 16px rgba(0,0,0,.32)}
+#formPlanos a.close:hover{border-radius:28px}
+#formPlanos .modal-dialog{position:relative;width:480px;height:740px;margin:0 auto;top:50%;margin-top:-370px}
+#timeline{background:linear-gradient(90deg,#00629d,#00b8b4);position:relative;padding:80px 0}
+#timeline:after{content:"";width:4px;height:100%;position:absolute;display:block;background:#fff;top:0;left:50%;margin-left:-2px}
+.timeline-item-content{padding:0}
+.timeline-item-content p{text-align:justify;color:#fff}
+.timeline-item-content h4{color:#fff;padding-bottom:20px}
+.timeline-card{width:40%;display:block;padding:20px;border-radius:5px;background:rgba(0,0,0,.25);box-shadow:4px 4px 16px rgba(0,0,0,.32);border:1px solid hsla(0,0%,100%,.2)}
+.card-left{float:left;position:relative}
+.card-left h4{text-align:right}
+.card-left:after{content:"";width:15%;height:4px;background:#fff;display:block;position:absolute;left:100%;top:50%}
+.card-right{float:right;position:relative}
+.card-right h4{text-align:left}
+.card-right:before{content:"";width:15%;height:4px;background:#fff;display:block;position:absolute;right:100%;top:50%}
+
+.nosso-negocio h5,.nosso-proposito h5{color:#888;padding-bottom:10px}
+.nosso-negocio h5{padding-top:150px}
+.nosso-proposito h5{padding-top:180px}
+.nosso-negocio p,.nosso-proposito p{padding-right:100px}
+span.nosso-negocio{background-image:url(../img/img-nosso-negocio.e16302a0.svg);background-position:100%}
+span.nosso-negocio,span.nosso-proposito{height:400px;will-change:100%;display:block;background-size:auto 400px;background-repeat:no-repeat}
+span.nosso-proposito{background-image:url(../img/img-nosso-proposito.846164d4.svg);background-position:0}
+
+
+.home .menu-card-solucoes-content{margin:0 auto;width:100%;max-width:1920px;height:auto;padding:0}
+.menu-card-solucoes-content{margin:0 auto;width:100%;max-width:1240px;height:auto;padding:0 0 30px 0;position:relative}
+.pag-solucoes .menu-card-solucoes{background:#fff}
+.pag-solucoes .menu-card-solucoes-content{box-shadow:none}
+.pag-solucoes .menu-card-solucoes-content-item{padding:10px;box-sizing:border-box}
+.pag-solucoes .menu-card-solucoes-content-item:first-child{padding:10px 10px 10px 20px;box-sizing:border-box}
+.pag-solucoes .menu-card-solucoes-content-item:last-child{padding:10px 20px 10px 10px;box-sizing:border-box}
+.pag-solucoes .menu-card-solucoes-content-item a{font-size:30px;border-radius:10px;box-shadow:4px 4px 16px rgba(0,0,0,.16)}
+.pag-solucoes-clinicas .clinicas a,.pag-solucoes-clinicas .clinicas a:hover,.pag-solucoes-hospitais .hospitais a,.pag-solucoes-hospitais .hospitais a:hover,.pag-solucoes-operadoras .operadoras a,.pag-solucoes-operadoras .operadoras a:hover{color:#fff}
+.pag-solucoes .hospitais a,.pag-solucoes .hospitais a:hover{padding:40px 40px 41px 40px}
+
+.clinicas a{padding:80px 85px;background:linear-gradient(rgba(0,78,137,.9),rgba(0,78,137,.9)),url(../img/clinicas.051cc894.webp);background-size:125% auto;background-repeat:no-repeat;background-position:50%}
+.clinicas a:hover{padding:80px 85px;background:linear-gradient(rgba(0,78,137,.9),rgba(0,78,137,.9)),url(../img/clinicas.051cc894.webp);background-size:150% auto;background-repeat:no-repeat;background-position:50%}
+.pag-solucoes-clinicas .clinicas a{border-bottom:10px solid #00629d}
+
+.hospitais a{padding:80px 85px;background:linear-gradient(rgba(0,147,143,.9),rgba(0,147,143,.9)),url(../img/hospitais.6a1e2a11.webp);background-size:125% auto;background-repeat:no-repeat;background-position:top}
+.hospitais a:hover{padding:80px 85px;background:linear-gradient(rgba(0,147,143,.9),rgba(0,147,143,.9)),url(../img/hospitais.6a1e2a11.webp);background-size:150% auto;background-repeat:no-repeat;background-position:top}
+.pag-solucoes-clinicas .clinicas a,.pag-solucoes-hospitais .hospitais a,.pag-solucoes-operadoras .operadoras a{border-bottom:5px solid #00b8b4}
+.operadoras a{padding:80px 80px;background:linear-gradient(rgba(67,68,81,.9),rgba(67,68,81,.9)),url(../img/operadoras.1f7c0c74.webp);background-size:125% auto;background-repeat:no-repeat;background-position:50%}
+.operadoras a:hover{padding:80px 80px;background:linear-gradient(rgba(67,68,81,.9),rgba(67,68,81,.9)),url(../img/operadoras.1f7c0c74.webp);background-size:150% auto;background-repeat:no-repeat;background-position:50%}
+.menu-card-solucoes-content-item a{text-align:center;font-size:36px;font-weight:700;display:block;color:hsla(0,0%,100%,.8);box-shadow:4px 4px 16px rgba(0,0,0,.32)}
+.menu-card-solucoes-content-item a:hover{color:#fff}
+
+.abas{background-color:#fff;border-bottom:1px solid #eee}
+.abas-content,.abas-content-5{padding-top:0}
+.abas-content-5 ul,.abas-content ul{width:100%;margin:0;padding:0;line-height:1;display:table}
+.abas-content ul li{width:23%;min-width:23%}
+.abas-content-5 ul li,.abas-content ul li{display:table-cell;text-align:center;vertical-align:bottom}
+.abas-content-5 ul li{width:19%;min-width:19%}
+.abas-content-5 a,.abas-content a{display:block;line-height:22px;position:relative;text-align:center;color:#fff;font-weight:600;font-size:16px;padding:10px 20px;transition:transform .2s}
+.abas-content-5 ul li:hover,.abas-content ul li:hover{background-color:#fff;transition:transform .2s}
+.abas-content-5 ul li:hover>span,.abas-content ul li:hover>span{background-color:#fff}
+.abas-content-5 span,.abas-content span{display:block;text-align:center;padding:10px 0;color:#fff;font-weight:800;font-size:16px;padding:10px 20px;line-height:22px;border-bottom:2px solid #444}
+.pag-solucoes-hospitais .abas-content a:hover,.pag-solucoes-operadoras .abas-content a:hover{background:transparent;color:#00b8b4;transition:transform .2s}
+
+.modulos{background:#f5f5f5}
+.modulos-content{padding:30px 0 80px 0}
+.modulo-card{display:flex;position:relative;background:#fff;padding:20px;margin:10px;height:130px;min-height:120px;max-height:130px;transition:transform .2s;border:none;border-radius:10px}
+.modulo-card:hover{transform:scale(1.1);background-color:#e5e5e5}
+.modulo-card .container-img{height:48px;display:flex;align-items:flex-start;position:absolute}
+.modulo-card span{display:flex;flex:1;align-items:flex-end;font-size:14px;color:#fff}
+.modulo-card:hover span{-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.modal,.modal-open,body.modal-open{overflow:hidden}
+.modal{position:fixed;top:0;right:0;bottom:0;left:0;z-index:1050;display:none;-webkit-overflow-scrolling:touch;outline:0}
+.modal.fade .modal-dialog{opacity:0;transform:translateY(-25%);transition:all .3s ease-out}
+.modal.in .modal-dialog{opacity:1;transform:translate(0)}
+.modal-open .modal{overflow-x:hidden;overflow-y:auto}
+.modal-dialog{position:relative;width:960px;height:500px;margin:0 auto;top:50%;margin-top:-250px}
+.modal-content{position:relative;background-color:hsla(0,0%,100%,.9);background-clip:padding-box;border-radius:6px;box-shadow:4px 4px 16px rgba(0,0,0,.25);outline:0;backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px)}
+.modal-backdrop{position:fixed;top:0;right:0;bottom:0;left:0;z-index:1040;background:linear-gradient(180deg,#000,#000)}
+.modal-backdrop.fade{filter:alpha(opacity=32);opacity:0}
+.modal-backdrop.in{filter:alpha(opacity=32);opacity:.32}
+
+.segmento-clinicas{background:linear-gradient(rgba(0,98,157,.9),rgba(0,98,157,.9)),url(../img/clinicas.051cc894.webp);background-size:auto 100%;background-repeat:no-repeat;background-position:50%}
+.segmento-clinicas,.segmento-hospitais{width:100%;height:500px;border-top-right-radius:0;border-bottom-right-radius:0;position:relative}
+.segmento-hospitais{background:linear-gradient(rgba(0,147,143,.9),rgba(0,147,143,.9)),url(../img/hospitais.6a1e2a11.webp);background-size:auto 100%;background-repeat:no-repeat;background-position:50%}
+.segmento-operadoras{width:100%;height:500px;background:linear-gradient(rgba(65,68,92,.9),rgba(65,68,82,.9)),url(../img/operadoras.1f7c0c74.webp);background-size:auto 100%;background-repeat:no-repeat;background-position:50%;border-top-right-radius:0;border-bottom-right-radius:0;position:relative}
+.modulo-descricao{position:relative}
+.modulo-descricao h3{font-weight:700;display:block;position:relative;padding:20px 20px;background:transparent;margin:20px}
+.modulo-descricao h3:after{content:"";height:3px;width:60px;background:linear-gradient(90deg,#00629d,#00b8b4);position:absolute;left:0;top:0;margin-top:90px;margin-left:40px}
+.modulo-descricao-texto{position:absolute;display:block;padding:0;margin-top:0;width:100%;overflow-y:scroll;height:340px;max-height:340px;padding:0 40px;box-sizing:border-box}
+.modulo-descricao-texto h5{font-size:16px;line-height:26px;color:#444}
+.modulo-descricao-texto p{font-size:16px;margin-bottom:8px;line-height:24px}
+.modulo-descricao-texto ul{padding:20px 0 20px 0}
+.modulo-descricao-texto ul li{margin-left:20px;padding:4px 10px;color:#444;line-height:24px;font-size:14px}
+.modulo-descricao-texto ul li>ul{padding:0 0!important}
+.modulo-descricao-texto ul li>ul li{list-style:disc}
+.modulo-descricao-texto ul:last-child{padding:20px 0 0 0}
+.descricao-clinicas ul{list-style-image:url(../img/ico-list-item-clinicas.f9147e30.svg)}
+.descricao-hospitais ul{list-style-image:url(../img/ico-list-item-hospitais.5347164c.svg)}
+.descricao-operadoras ul{list-style-image:url(../img/ico-list-item-operadoras.ffec9495.svg)}
+.cta{width:100%;background:linear-gradient(rgba(0,0,0,.62),rgba(0,0,0,.62)),url(../img/bg-cta.2bd25f0d.webp);background-attachment:fixed;background-position:50%;background-repeat:no-repeat;background-size:cover}
+.cta-content{margin:0 auto;width:90%;max-width:1200px;padding:80px 0;text-align:center;box-sizing:border-content}
+.cta-content h3{padding:0 120px;color:#fff}
+.cta-content h3 span{color:#fff}
+.pag-contato .pag-title{background:linear-gradient(90deg,rgba(0,58,117,.92),rgba(0,167,163,.92)),url(../img/bg-contato.28962b0a.webp);background-size:100% auto;background-repeat:no-repeat;background-position:50%;-webkit-animation:animatedBackground 10s linear alternate;animation:animatedBackground 10s linear alternate}
+
+.contato-form{width:100%}
+.contato-form-content{margin:0 auto;width:90%;max-width:1200px;padding:40px 0 80px 0}
+.formulario span{float:right;font-size:12px;color:#888}
+.formulario .btn{text-align:center}form{width:100%}
+form .col-1-2{width:49%;padding-right:1%}
+.formulario .col-1-2:last-child{width:49%;padding-right:0;padding-left:1%}
+.formulario .row{padding-bottom:8px}
+.formulario .row:last-child{padding-bottom:0}
+.formulario button{padding:6px 80px;margin-top:20px}
+.formulario label{display:block;font-size:12px;color:#888;padding-bottom:4px}
+.formulario input[type=text],input[type=email],input[type=tel],select{width:100%;display:block;padding:10px 0;box-sizing:border-box;outline:none;border:none;background-color:transparent;border-bottom:1px solid #ccc;font-size:14px;font-weight:600;color:#444;font-family:Open Sans,sans-serif}
+.formulario input:focus,.formulario select:focus,.formulario textarea:focus{border-bottom:1px solid #00629d}
+.formulario select{padding:9px 0!important}
+.formulario textarea{width:100%;height:160px;display:block;padding:11px 0;box-sizing:border-box;outline:none;border:none;border-bottom:1px solid #ccc;background-color:transparent;font-size:14px;font-weight:600;color:#444;font-family:Open Sans,sans-serif}
+.formulario ul{padding-top:20px}
+.formulario ul li{padding-top:8px}
+form.errors :invalid{border-color:#ff3b30}
+form.errors .error-message{display:block}
+.error-message{display:none;color:#ff3b30!important;float:left!important;font-style:normal}
+.required:after{content:" *";color:#00b8b4}
+
+.informacoes{padding:0 0 0 40px}
+.informacoes h5{padding:30px 0 10px 0;color:#444}
+.informacoes h5:first-child{padding:10px 0 10px 0;color:#444}
+.informacoes p{color:#444;line-height:24px;font-size:14px}
+.mapouter{position:relative;text-align:right;padding-top:20px}
+.gmap_canvas,.mapouter{height:320px;width:100%}
+.gmap_canvas{overflow:hidden;background:none!important}
+
+@media only screen and (min-width:1600px){
+    .clinicas a,.clinicas a:hover,.operadoras a,.operadoras a:hover{padding:80px 80px}
+}
+
+.back-to-top{position:fixed;height:40px;width:40px;bottom:20px;right:50%;margin-right:-20px;display:none;background:rgba(0,167,163,.75);border-radius:60px;opacity:.95!important;box-shadow:2px 2px 4px rgba(0,0,0,.16)}
+.back-to-top:hover{background:#00629d;opacity:1}
+.back-to-top span{display:block;height:100%;width:100%;background-image:url("");background-size:16px auto;background-repeat:no-repeat;background-position:50%}
+.btn-float-whatsapp{position:fixed;height:50px;width:50px;bottom:20px;right:20px;display:block;border-radius:45px;box-shadow:2px 2px 4px rgba(0,0,0,.16)}
+.btn-float-whatsapp-home{position:fixed;height:40px;width:215px;bottom:22px;right:20px;display:block;border-radius:45px;box-shadow:2px 2px 4px rgba(0,0,0,.16)}
+.btn-float-whatsapp-home span{display:block;height:100%;width:100%;background-image:url(../img/btn-whatsapp-home.565c1ca7.webp);background-size:100% 100%;background-repeat:no-repeat;background-position:50%}
+.Cookie{background-color:rgba(29,29,31,.82)!important;-webkit-backdrop-filter:saturate(180%) blur(20px)!important;backdrop-filter:saturate(180%) blur(20px)!important;padding:20px;display:block!important;width:500px!important;left:20px!important;bottom:20px!important;border-radius:16px!important}
+.Cookie p{font-size:14px!important;text-align:left!important}
+.Cookie a,.Cookie p{color:#fff!important}
+.Cookie a{font-weight:800!important;text-decoration:underline!important}
+.Cookie a:hover{color:#00b8b4!important}
+.Cookie .cookie-button{text-align:center!important;width:100%!important;display:block!important}
+.Cookie button{padding:8px 60px!important;margin:20px 10px 0 10px!important;font-size:14px!important}
+#canal-denuncias{border-top:1px solid #e5e5e5}
+#sobre-politica-privacidade{width:100%;background:linear-gradient(90deg,rgba(0,78,137,.9),rgba(0,167,163,.9)),url(../img/politica-privacidade-bg.22e38e09.webp);background-attachment:fixed;background-position:50%;background-repeat:no-repeat;background-size:cover}
+#sobre-politica-privacidade .btn-container{padding:0}
+#sobre-politica-privacidade a.btn-destaque{border:2px solid #fff;background-color:transparent;color:#fff}
+#sobre-politica-privacidade a.btn-destaque:hover{border:2px solid #00629d;background-color:#00629d;color:#fff}
+#n{height:10px;width:10px;display:block;background:transparent;position:absolute;top:0}
+
+@media(max-width:980px){.cookieConsentContainer{bottom:0!important;left:0!important;width:100%!important}}
+
+@media only screen and (min-width:1600px){
+  .clinicas a,.clinicas a:hover,.operadoras a,.operadoras a:hover{padding:80px 140px}
+  .pag-solucoes .clinicas a,.pag-solucoes .clinicas a:hover,.pag-solucoes .hospitais a,.pag-solucoes .hospitais a:hover,.pag-solucoes .operadoras a,.pag-solucoes .operadoras a:hover{padding:40px 60px}
+}
+@media only screen and (min-width:1096px)and (max-width:1270px){
+  .menu{zoom:.85}.clinicas a,.clinicas a:hover,.hospitais a,.hospitais a:hover,.operadoras a,.operadoras a:hover{padding:80px 20px}
+  .pag-solucoes .clinicas a,.pag-solucoes .clinicas a:hover,.pag-solucoes .hospitais a,.pag-solucoes .hospitais a:hover,.pag-solucoes .operadoras a,.pag-solucoes .operadoras a:hover{padding:80px 60px}
+  .valor-plano{font-size:36px!important;line-height:36px;padding:10px 0 0 0}
+  .valor-plano span{font-size:30px}
+  .card-plano a{padding-left:20px;padding-right:20px}
+  .teste-gratis a{font-size:13px!important;padding-left:0!important;padding-right:0!important}
+  .mensal{font-size:14px!important}
+  .desc-plano{padding-left:0!important;padding-right:0!important}
+  .contato-especialista{color:#f47a20;font-weight:600;padding:30px 0}
+  .contato-especialista span{font-size:30px!important}
+}
+@media only screen and (min-width:320px)and (max-width:1095px){.back-to-top{position:fixed;height:40px;width:40px;bottom:20px;left:20px;display:none;background:rgba(0,167,163,.75);border-radius:60px;opacity:.95!important;box-shadow:2px 2px 4px rgba(0,0,0,.16)}.Cookie{background:rgba(0,0,0,.82)!important;-webkit-backdrop-filter:saturate(180%) blur(20px)!important;backdrop-filter:saturate(180%) blur(20px)!important;padding:20px!important;display:block!important;width:100%!important;left:0!important;bottom:0!important;border-radius:0!important}.Cookie p{font-size:14px!important;text-align:left!important}.Cookie a,.Cookie p{color:#fff!important}.Cookie a{font-weight:800!important;text-decoration:underline!important}.Cookie a:hover{color:#00b8b4!important}.Cookie .cookie-button{text-align:center!important;width:100%!important;display:block!important}.Cookie button{padding:8px 60px!important;margin:20px 10px 0 10px!important;font-size:14px!important}#n{height:10px;width:10px;display:block;background:transparent;position:absolute;top:520px}::-webkit-scrollbar-thumb{background:transparent;border-radius:10px}
+h2,h3{padding-top:10px}
+h1{font-size:38px;line-height:48px}
+h2{font-size:30px;line-height:30px}h3{font-size:24px;line-height:24px}h4{font-size:20px;line-height:20px}
+.btn-container,.btn-container-form,.formulario .btn-form{text-align:center}.btn{display:inline-block;width:90%!important;box-sizing:border-box}
+.pad-lg-m{padding:40px 0}.btn-lg{padding:11px 30px;font-size:18px}.header-content-nav,.header-content-right{display:none}.carrousel-content-item-cta ul li{display:normal;width:100%;padding:10px 0}.carrousel-content-item-cta a{width:100%;box-sizing:border-box;margin-right:0}.pag-solucoes .pag-title{background:linear-gradient(90deg,rgba(0,78,137,.92),rgba(0,167,163,.92)),url(../img/bg-solucoes.b7c04313.webp)}.pag-solucoes .clinicas a,.pag-solucoes .clinicas a:hover,.pag-solucoes .hospitais a,.pag-solucoes .hospitais a:hover,.pag-solucoes .operadoras a,.pag-solucoes .operadoras a:hover{padding:30px 40px;font-size:20px}#home-solicitar-atendimento-personalizado .modal a.close{display:block;background:#fff;float:right;position:relative;margin-top:-70px;margin-right:-20px;border-radius:8px;box-shadow:4px 4px 16px rgba(0,0,0,.32)}#home-solicitar-atendimento-personalizado .modal a.close:hover{border-radius:28px}#formSolicitarAtendimento .modal-body{padding:20px}#formSolicitarAtendimento .col-1-1{text-align:center}.itens-selecionados{margin:20px 0 0 0;padding:0}.itens-selecionados-tags{padding:10px 0}.itens-selecionados h5{margin-top:20px 0}
+.pag-politica-privacidade h2:after,.pag-politica-privacidade h3:after{content:"";height:0;width:60px;position:absolute;top:0;left:0;background:transparent}#apresentacao p{padding-top:40px}#missao-visao-valores .card-item{margin:20px 0 0 0}#diretoria .card-item{margin:0 0 20px 0}.pag-contato .pag-title{background:linear-gradient(90deg,rgba(0,58,117,.92),rgba(0,167,163,.92)),url(../img/bg-contato.28962b0a.webp);background-size:auto 150%;background-repeat:no-repeat;background-position:50%}.pag-contato .pag-title,.pag-quem-somos .pag-title{-webkit-animation:animatedBackground 10s linear alternate;animation:animatedBackground 10s linear alternate}.pag-quem-somos .pag-title{background:linear-gradient(90deg,rgba(0,58,117,.92),rgba(0,167,163,.92)),url(../img/bg-quem-somos.a42c4a5d.webp);background-size:auto 150%;background-repeat:no-repeat;background-position:50%}.pag-solucoes .pag-title{background:linear-gradient(90deg,rgba(0,58,117,.92),rgba(0,167,163,.92)),url(../img/bg-solucoes.b7c04313.webp);background-size:auto 150%;background-repeat:no-repeat;background-position:50%;-webkit-animation:animatedBackground 10s linear alternate;animation:animatedBackground 10s linear alternate}
+
+#mobile{display:block}
+div.informacoes{padding-left:0;padding-top:40px}
+.container-contato,.container-onde,.container-time,div.container-footer-logo{color:#A4A4A4; display:block}
+
+.footer-content{padding:40px 0 60px 0}
+.footer-content-nav{text-align:center;}
+.footer-content-nav ul li{padding:8px 0;}
+.footer-content-nav p{color:white;}
+.footer-content-nav a,.footer-content-nav span{font-size:16px;}
+.footer-content-nav h5{text-align:center;padding-top:40px;font-size:16px;opacity:.1; padding-bottom: 20px;}
+.container-newsletter{padding:0;box-sizing:border-box}
+.container-newsletter input{width:90%!important;margin:0 5%}
+.container-newsletter button{width:90%!important;margin:20px 5% 0 5%}
+.col-1-4:first-child h5{text-align:center;padding-top:0}
+
+
+
+ul.footer-redes-sociais>li>a.btn-social{width:32px;height:32px;background-size:32px 32px;text-align: center;}
+#minha-clinica-planos{background:linear-gradient(180deg,#ee7c63,#efaa63);height:auto;width:100%}
+#minha-clinica-planos h1{font-size:32px;padding:80px 0 80px 0}
+#minha-clinica-planos .card-plano{background-size:100% auto;background-position:top;background-repeat:no-repeat;max-width:300px;margin:0 20px 80px 20px;text-align:center}
+#minha-clinica-planos .tipo-plano-personalizado{color:#fff;font-size:16px;font-weight:0;padding:20px 20px 40px 20px}
+#minha-clinica-planos .desc-plan-perso{color:#f47a20;font-size:14px;position:relative;top:150px}
+#minha-clinica-planos .valor-de{color:#444;font-size:16px;font-weight:600;text-decoration:line-through;padding:30px 0 0 0;height:26px}
+#minha-clinica-planos .fidelidade{color:#888;font-size:14px;font-weight:600;text-decoration:none;padding:10px;height:30px}
+#minha-clinica-planos .valor-plano{color:#f47a20;font-size:64px;line-height:48px;font-weight:800;padding:10px 0 0 0}
+#minha-clinica-planos .valor-plano span{font-size:30px}
+#minha-clinica-planos .contato-especialista{color:#f47a20;font-weight:600;padding:50px 0;position:relative}
+#minha-clinica-planos .contato-especialista span{font-size:30px}
+#minha-clinica-planos .mensal{font-size:20px;height:26px;color:#f47a20;font-weight:600}
+#minha-clinica-planos .desc-plano{color:#f47a20;position:relative;padding:30px;font-weight:600}
+#minha-clinica-planos a{background:#f47a20;border:none;display:block!important}
+#minha-clinica-planos a:hover{background-color:#00629d;border:none}
+#minha-clinica-planos a.teste-gratis{display:block;padding:14px 20px;background-color:#f1a463;-webkit-backdrop-filter:blur(20px) saturate(80%);backdrop-filter:blur(20px) saturate(80%);color:#fff;font-size:16px;border:none;margin:10px 0 0 0;font-weight:600}
+#minha-clinica-planos a.teste-gratis:hover{background:#00b8b4;color:#fff}
+#minha-clinica-planos a.teste-gratis:before{margin-right:10px;top:6px;position:relative}
+#minha-clinica-planos .btn{display:inline-block;width:100%!important;box-sizing:border-box}
+#formPlanos .modal-dialog{position:relative;width:90%;height:740px;margin:0 auto;top:50%;margin-top:-340px}
+.btn-position{position:relative;bottom:0!important;left:-8px;width:70%!important}
+.obs{color:#fff!important;position:relative}
+.pag-solucoes .menu-card-solucoes-content{padding-top:10px;padding-bottom:0}
+.pag-solucoes .menu-card-solucoes-content-item,.pag-solucoes .menu-card-solucoes-content-item:first-child,.pag-solucoes .menu-card-solucoes-content-item:last-child{padding:0 20px 20px 20px}
+.hospitais a{background:linear-gradient(rgba(0,147,143,.9),rgba(0,147,143,.9)),url(../img/hospitais.6a1e2a11.webp);background-size:125% auto;background-repeat:no-repeat;background-position:50%}.hospitais a:hover{background:linear-gradient(rgba(0,147,143,.9),rgba(0,147,143,.9)),url(../img/hospitais.6a1e2a11.webp);background-size:150% auto;background-repeat:no-repeat;background-position:50%}.modal-dialog{width:90%;margin-top:-300px}.segmento-clinicas{height:200px;background:linear-gradient(rgba(0,98,157,.9),rgba(0,98,157,.9));zoom:.5}.segmento-hospitais{height:200px;background:linear-gradient(rgba(0,147,143,.9),rgba(0,147,143,.9));zoom:.5}.segmento-operadoras{height:200px;background:linear-gradient(rgba(67,68,81,.9),rgba(67,68,81,.9));zoom:.5}.modulo-descricao{height:500px}.modulo-descricao h3{padding:20px 40px;background:#00b8b4;color:#fff;margin:0 0 20px 0;text-align:center}.modulo-descricao-texto{position:absolute;display:block;padding:0;margin-top:0;width:100%;overflow-y:scroll;height:380px;max-height:380px;padding:0 40px;box-sizing:border-box}.abas-content-5 ul li,.abas-content ul li{display:inline-block;width:100%}.abas-content-5 span,.abas-content span{border-top:2px solid #444}.text-lg{font-size:20px;line-height:30px}.text-xlg{font-size:24px;line-height:34px}.text-high{padding:0 20px}.slide-button{position:relative;top:-50px!important}.carrousel-content-item-cta p{font-size:20px;padding:40px 0!important;line-height:26px}.carrousel-content-item-grafico{padding:40px 0 0 0;text-align:center}.grafico-before{padding:0 0 40px 0}.carrousel-content-item-cta ul li a{display:block;box-sizing:border-box;margin:0 5%;top:20px;width:90%!important}.home .menu-card-solucoes-content{margin:0 auto;width:100%;max-width:1920px;height:auto;margin-top:0;position:relative;padding:0}.servicos-content{margin-top:-40px}.servicos-content li{width:50%;padding-top:40px}iframe{width:100%;padding-top:40px}#home-precisa-de-um-orcamento .container{width:100%;border-radius:0}#home-cases .row{width:1200px}#home-cases .container .col-1-3{width:33.33%}.box-logo-parceiros{overflow-y:scroll;overflow-y:hidden}#home-parceiros .row{width:1200px}#home-parceiros .container .col-1-8{width:12.5%}.modal h3:before{opacity:0}.cookieConsentContainer{border-radius:0}button[type=reset]{margin-left:0}}
+
+@media only screen and (min-width:1251px)and (max-width:1350px){.slide{zoom:.9;transition:.3s}}
+@media only screen and (min-width:1096px)and (max-width:1250px){.slide{zoom:.8;transition:.3s}}
+
+#header:hover{background-color:#fff;box-shadow:1px 1px 4px rgba(0,0,0,.32)}
+#header:hover .header-content-nav-item a{color:#ccc}
+#header:hover .btn-menu span{background-color:#888!important}
+#header:hover .menu a{color:#fff}
+#header:hover .menu a:hover{color:#fff}
+#header:hover .header-content-nav-item>a:hover{border-bottom:3px solid #00b8b4;color:#fff}
+
+#header:hover a.btn-entrar{color:#fff}
+#header:hover a.btn-entrar:hover{border-bottom:3px solid #00b8b4;color:#fff}
+#header:hover .nav-portal-content ul li a{color:#fff}
+#header:hover .nav-portal-content ul li a:hover{color:#fff;background-image:linear-gradient(90deg,#00629d,#00b8b4)}
+.heartbeat{-webkit-animation:heartbeat 1.5s ease-in-out infinite both;animation:heartbeat 1.5s ease-in-out infinite both}
+
+@-webkit-keyframes color-change-2x{0%{background:#00629d}to{background:#009e9e}}
+@keyframes color-change-2x{0%{background:#00629d}to{background:#009e9e}}
+@-webkit-keyframes animatedBackground{0%{background-position:bottom}to{background-position:50%}}
+@keyframes animatedBackground{0%{background-position:bottom}to{background-position:50%}}
+@-webkit-keyframes heartbeat{0%{transform:scale(1);transform-origin:center center;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}10%{transform:scale(.91);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}17%{transform:scale(.98);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}33%{transform:scale(.87);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}45%{transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes heartbeat{0%{transform:scale(1);transform-origin:center center;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}10%{transform:scale(.91);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}17%{transform:scale(.98);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}33%{transform:scale(.87);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}45%{transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}.fade-slide-show{-webkit-animation-name:fade-slide-show;-webkit-animation-duration:2s;animation-name:fade-slide-show;-webkit-animation-duration:2;animation-duration:2}@-webkit-keyframes fade-slide-show{0%{opacity:0}to{opacity:1}}@keyframes fade-slide-show{0%{opacity:0}to{opacity:1}}.container-img{height:48px;width:100%;display:block}
+
+
+  .login-button-div{
+    float: right;
+    margin:2em 1em 0em 5em;
+    
+  }
+
+
+  .login-button{
+    border:1px #ccc solid;
+    border-radius: 20px; 
+    padding:10px 60px;
+    color:#ccc;
+  }
+
+  .login-button:hover{
+    background-color: #08298A;
+  }
+
+
+
+  
+  .dropdown {
+    float:right;
+    display:block;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    margin-right:0px;
+    padding:27px 0px 27px 125px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    color:#A4A4A4;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 12px 12px 5px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {background-color: #f2f2f2;}
+
+  .text-portal{
+    padding-top:1em;
+  }
+
+  .cadastro{
+    width:40%;
+    padding: 2em 0em;
+  }
+
+
+  @media only screen and (max-width:1100px){
+    .footer-titulo{
+      text-align: center;
+      margin-top:2em;
+      margin-bottom: 0.5em;
+    }
+  }

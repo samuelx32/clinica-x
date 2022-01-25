@@ -1,0 +1,37 @@
+<div class="container">
+    <p class="text-md text-portal">Bem Vindo {{usuario_atual}}</p>
+    <p>Cargo: {{cargo}}</p>
+    <a href="/cadastro">Adicionar Novo Funcionário</a>
+</div>
+
+
+<section id="home-servicos">
+    <div class="container">
+        <p data-aos="fade-up" data-aos-duration="600" class="center text-high aos-init">
+            <span class="text-lg">Lista de Usuarios</span>
+        </p>
+        <div class="servicos-content">
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>User</th>
+                    <th>Cargo</th>
+                    <th>Opções</th>
+                </tr>
+                {{#usuarios}}
+                <tr>
+                    <th>{{id_usuario}}</th>
+                    <th>{{nome}}</th>
+                    <th>{{usuario}}</th>
+                    <th>{{cargo}}</th>
+                    <th>
+                        <button type="button" class="btn btn-entrar">Baixar</button>
+                        
+                    </th>
+                </tr>
+                {{/usuarios}}
+            </table>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+  <meta name="author" content="X">
+  <meta name="theme-color" content="#00b8b4">
+  <title>{{titulo}}</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <meta name="theme-color" content="#4DBA87">
+  <meta name="apple-mobile-web-app-capable" content="no">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="main">
+</head>
+
+
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+  <div id="app">
+    <div class="header">
+      <div id="header" class="header-white">
+        <div class="header-content">
+          <div class="header-content-logo">
+            <h2 class="logo">Clinica X</h2>
+          </div>
+
+          <div class="header-content-right">
+            <div class="header-content-nav-item">
+              <a href="/" class="">Home</a>
+            </div>
+            <div class="header-content-nav-item">
+              <a href="#home-servicos" class="">Serviços</a>
+            </div>
+            <div class="header-content-nav-item">
+              <a href="#home-quem-somos" class="">Sobre</a>
+            </div>
+            <div class="header-content-nav-item">
+              <a href="#home-servicos2">Atentimento</a>
+            </div>
+            <div class="header-content-nav-item">
+              <a href="#contato" class="">Contato</a>
+            </div>
+            
+
+            <div class="dropdown">
+              <button class="dropbtn">{{usuario_atual}} 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="/portal">Portal de Exames</a>
+                <a href="/login">{{sit}}</a>
+              </div>
+            </div>
+          </div>
+
+          <section class="botao-mobile">
+            <a href="javascript:void(0);" class="iconMobile" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </section>
+        </div>
+
+        <section class="menu-mobile">
+          <div class="topnavMobile">
+            <div id="myLinksMenu">
+              <a href="/login">{{sit}}</a>
+              <a href="#home-servicos" class="">Serviços</a>
+              <a href="#home-servicos2">Atentimento</a>
+              <a href="#contato" class="">Contato</a>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <div class="home">
+
+      {{{body}}}
+
+
+    </div>
+
+
+    <div id="contato" class="footer">
+      <div class="footer-content">
+        <div class="row">
+          <div data-aos="fade-up" data-aos-duration="300" class="col col-1-4 aos-init">
+            <h5 class="footer-titulo">Redes Sociais</h5>
+            <nav class="footer-content-nav">
+              <ul class="footer-redes-sociais">
+                <li>
+                  <a href="" target="_blank" class="">Linkedin</a>
+                </li>
+                <li>
+                  <a href="" target="_blank" class="">Facebook</a>
+                </li>
+                <li>
+                  <a href="" target="_blank" class="">Instagram</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div data-aos="fade-up" data-aos-duration="600" class="col col-1-4 container-contato aos-init">
+            <h5 class="footer-titulo">Contato</h5>
+            <nav class="footer-content-nav">
+              <p>(31) 3399-2500</p>
+              <p>clinicax@gmail.com</p>
+            </nav>
+          </div>
+
+          <div data-aos="fade-up" data-aos-duration="900" class="col col-1-4 container-onde aos-init">
+            <h5 class="footer-titulo">Onde Estamos</h5>
+            <nav class="footer-content-nav">
+              <p>Endereço Clinica X</p>
+              <p>Brasilia - DF - CEP: XXX.XXX.XX</p>
+            </nav>
+          </div>
+
+          <div data-aos="fade-up" data-aos-duration="1200" class="col col-1-4 container-time aos-init">
+            <h5 class="footer-titulo">Horário de Funcionamento</h5>
+            <nav class="footer-content-nav">
+              <p>Seg - Qui: 8:00 às 12:00 e 13:30 às 18:00</p>
+              <p>Sexta: 8:00 às 12:00 e 13:30 às 17:00</p>
+            </nav>
+          </div>
+
+
+
+
+        </div>
+
+      </div>
+
+      <div class="footer-direitos-reservados">
+        <div class="footer-direitos-reservados-content">
+          <p class="module"> © 2021 Clinica X - Todos os direitos reservados. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myLinksMenu");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+
+  <script>var slideIndex = 0;
+    showSlides(slideIndex);
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 8000); // Change image every 2 seconds
+    }</script>
+
+
+</body>
+
+</html>
