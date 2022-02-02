@@ -1,0 +1,23 @@
+<div class="fundo-portal container-portal">
+    <div class="separa">
+        <p class="text-md"></p>
+        <a href="/portal" class="button-portal">Voltar</a>
+    </div>
+
+    <form method="POST" action="/alterar-exame-exe" class="cadastro-portal" enctype="multipart/form-data">
+        <input type="hidden" name="id" value="{{id}}">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" value="{{nome}}">
+
+        <label for="tipo">Tipo</label>
+        <input type="text" id="tipo" name="tipo" value="{{tipo}}">
+
+        <label for="data">Data</label>
+        <input type="text" id="data" name="data" value="{{data}}">
+
+        <label for="pdf">Adicione o Resultado aqui:</label>
+        <input type="file" id="pdf" name="pdf" accept=".pdf">
+
+        <input type="submit" value="Incluir">
+    </form>
+</div>

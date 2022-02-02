@@ -1,0 +1,177 @@
+body{
+    background:#D8D8D8;
+}
+
+.home{
+    background-color: #D8D8D8;
+    margin:0;
+    padding:0;
+}
+
+.container-portal{
+    margin:0 15%;
+    max-width:100%;
+    background-color: #fff;
+}
+
+
+
+.text-portal{
+    font-size: 18px;
+}
+
+hr{
+    margin: 1em 0;
+}
+
+.button-portal{
+    color:#1C1C1C;
+    background-color: #D8D8D8;
+    border:1px solid #A4A4A4;
+    padding:7px 18px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.button-portal:hover{
+    background-color: #A4A4A4;
+}
+
+.link-portal{
+    color:blue;
+    background-color: transparent;
+    border:0;
+    
+}
+
+.link-portal:hover{
+    text-decoration: underline;
+}
+
+.deletar{
+    background-color: #FE2E2E;
+    
+}
+
+.tabela {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+.tabela td, .tabela th {
+    border: 1px solid #ddd;
+    padding: 6px;
+    font-size: 16px;
+  }
+  
+.tabela tr:nth-child(even){background-color: #f2f2f2;}
+  
+.tabela tr:hover {background-color: #ddd;}
+  
+.tabela th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+
+
+.infos-usuario{
+      margin-bottom: 5%;
+}
+
+
+.botoes{
+    float:left;
+    display: flex;
+    padding-top:1em;
+}
+
+.botoes-portal{
+    float:left;
+    display: flex;
+}
+
+.pdfstyle{
+    width: 80%;
+    margin-left: 10%;
+    height: 720px;
+    margin-top:5%;
+    margin-bottom: 5%;
+    border: 1px solid black;
+}
+
+.icone-vizu{
+    width:27px;
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #D8D8D8;
+}
+
+.icone-button{
+    color:#1C1C1C;
+    background-color: #D8D8D8;
+    border:1px solid #A4A4A4;
+    padding:2px 10px 2px 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+.fundo-portal{
+    max-width: 100%;
+    margin-bottom: 2em;
+    margin-top:2em;
+    padding:2em;
+    border:1px solid #BDBDBD;
+    box-shadow: 0 0 5px black;
+}
+
+.separa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cadastro-portal input[type=text], select, input[type=file] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+.cadastro-portal input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+.cadastro-portal input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+@media only screen and (max-width:1100px){
+    .container-portal{
+        margin:0;
+        padding-right:0 3em 0 1em;
+        width:auto;
+    }
+
+    .fundo-portal{
+        width:auto;
+        margin:2em;
+    }
+
+}

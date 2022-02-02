@@ -1,0 +1,28 @@
+
+<div class="fundo-portal container-portal">
+    <div class="separa">
+        <p class="text-md"></p>
+        <a href="/portal" class="button-portal">Voltar</a>
+    </div>
+
+    <form method="POST" action="/alterar-exame-exe" class="cadastro-portal">
+        <input type="hidden" name="id" value="{{id}}">
+        <label for="usuario">Usuario</label>
+        <input type="text" id="usuario" name="usuario" value="{{usuario}}">
+
+        <label for="senha">Senha</label>
+        <input type="text" id="senha" name="senha" value="{{senha}}">
+
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" value="{{nome}}">
+
+        <label for="cargo">Cargo</label>
+        <select id="cargo" name="cargo">
+            <option value="paciente">Paciente</option>
+            <option value="gerente">Gerente</option>
+            <option value="funcionario">Funcionário</option>
+        </select>
+
+        <input type="submit" value="Incluir">
+    </form>
+</div>

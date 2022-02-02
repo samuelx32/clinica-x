@@ -1,9 +1,26 @@
-<div class="container">
-    <form method="POST" action="/valida-cadastro" class="formulario cadastro">
-        <input type="text" name="usuario" placeholder="Usuario"><p>
-        <input type="text" name="senha" placeholder="Senha"><p>
-        <input type="text" name="nome" placeholder="Nome"><p>
-        <input type="text" name="cargo" placeholder="Cargo"><p>
-        <button type="submit" class="alt">Inserir</button>
+<div class="fundo-portal container-portal">
+    <div class="separa">
+        <p class="text-md"></p>
+        <a href="/portal" class="button-portal">Voltar</a>
+    </div>
+
+    <form method="POST" action="/valida-cadastro" class="cadastro-portal">
+        <label for="usuario">Usuario</label>
+        <input type="text" id="usuario" name="usuario" placeholder="Seu usuário...">
+
+        <label for="senha">Senha</label>
+        <input type="text" id="senha" name="senha" placeholder="Sua Senha...">
+
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome..">
+
+        <label for="cargo">Cargo</label>
+        <select id="cargo" name="cargo">
+            <option value="paciente">Paciente</option>
+            <option value="gerente">Gerente</option>
+            <option value="funcionario">Funcionário</option>
+        </select>
+
+        <input type="submit" value="Incluir">
     </form>
 </div>

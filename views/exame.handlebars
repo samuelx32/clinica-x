@@ -1,0 +1,35 @@
+<div class="fundo-portal container-portal">
+
+    <div class="infos-usuario">
+        {{#exames}}
+        <div class="separa">
+            <p class="text-md"><b>Infomações do Exame</b></p>
+            <div class="botoes">
+                <form method="POST" action="/alterar-exame">
+                    <input type="hidden" name="id" value="{{id_exame}}">
+                    <input type="hidden" name="nome" value="{{nome}}">
+                    <input type="hidden" name="tipo" value="{{tipo}}">
+                    <input type="hidden" name="pdf" value="{{pdf}}">
+                    <input type="hidden" name="data" value="{{data}}">
+                    <button type="submit" class="button-portal">Alterar</button>
+                </form>
+
+
+                <form method="POST" action="/deletar-exame">
+                    <input type="hidden" name="id_exame" value="{{id_exame}}">
+                    <button type="submit" class="button-portal deletar">Deletar</button>
+                </form>
+            </div>
+        </div>
+        <p>Nome: {{nome}}</p>
+        <p>Tipo: {{tipo}}</p>
+        <p>Data: {{data}}</p>
+        <p>PDF: {{pdf}}</p>
+
+
+        {{/exames}}
+    </div>
+
+
+
+</div>

@@ -1,0 +1,34 @@
+<div class="fundo-portal container-portal">
+    <div class="infos-usuario">
+        {{#usuarios}}
+        <div class="separa">
+            <p class="text-md"><b>Informações</b></p>
+            <div class="botoes">
+                <form method="POST" action="/alterar-usuario">
+                    <input type="hidden" name="id" value="{{id_usuario}}">
+                    <input type="hidden" name="usuario" value="{{usuario}}">
+                    <input type="hidden" name="senha" value="{{senha}}">
+                    <input type="hidden" name="nome" value="{{nome}}">
+                    <input type="hidden" name="cargo" value="{{cargo}}">
+                    <button type="submit" class="button-portal">Alterar</button>
+                </form>
+
+
+                <form method="POST" action="/deletar-usuario">
+                    <input type="hidden" name="id_usuario" value="{{id_usuario}}">
+                    <button type="submit" class="button-portal deletar">Deletar</button>
+                </form>
+            </div>
+        </div>
+
+
+        <p>Nome: {{nome}}</p>
+        <p>User: {{usuario}}</p>
+        <p>Senha: {{senha}}</p>
+        <p>Cargo: {{cargo}}</p>
+
+        {{/usuarios}}
+
+
+    </div>
+</div>

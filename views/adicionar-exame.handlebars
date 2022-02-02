@@ -1,0 +1,22 @@
+<div class="fundo-portal container-portal">
+    <div class="separa">
+        <p class="text-md"></p>
+        <a href="/portal" class="button-portal">Voltar</a>
+    </div>
+
+    <form method="POST" action="/adicionar-exame-exe" class="cadastro-portal" enctype="multipart/form-data">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Nome...">
+
+        <label for="tipo">Tipo</label>
+        <input type="text" id="tipo" name="tipo" placeholder="Tipo...">
+
+        <label for="data">Data</label>
+        <input type="text" id="data" name="data" placeholder="Data do exame..">
+
+        <label for="pdf">Adicione o Resultado aqui:</label>
+        <input type="file" id="pdf" name="pdf" accept=".pdf">
+
+        <input type="submit" value="Incluir">
+    </form>
+</div>

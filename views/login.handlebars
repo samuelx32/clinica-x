@@ -21,25 +21,20 @@
 
 
 <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
-    
+
     <section id="home-servicos">
         <div class="container">
             <div class="bloco-form">
-                <p data-aos="fade-up" data-aos-duration="600" class="">
-                    <span class="text-sm">Acessar Portal</span>
-                </p>
-                <form method="POST" action="/valida-login">
-                    <input type="text" name="usuario" placeholder="Usuario" required>
-                    <p>
-                        <input type="password" name="senha" placeholder="Senha" required>
-                    <p>
-                        <button type="input" class="button-entrar">ENTRAR</button>
+                <p class="text-md">PORTAL DE EXAMES</p>
+                <form method="POST" action="/valida-login" class="cadastro-portal">
+                    <input type="text" id="usuario" name="usuario" placeholder="Seu usuário..." required>
+                    <input type="text" id="senha" name="senha" placeholder="Sua Senha..." required>
+                    <input type="submit" value="ACESSAR">
                 </form>
-                <a href="/" class="voltar">Voltar para o Inicio</a><p>
-                {{msg}}
+                <p>{{msg}}</p>
             </div>
-    
-            
+
+
         </div>
     </section>
 </body>

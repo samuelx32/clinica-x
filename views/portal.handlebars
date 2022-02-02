@@ -1,37 +1,45 @@
-<div class="container">
-    <p class="text-md text-portal">Bem Vindo {{usuario_atual}}</p>
-    <p>Cargo: {{cargo}}</p>
-    <a href="/cadastro">Adicionar Novo Funcionário</a>
+<div class="fundo-portal container-portal">
+
+    <div class="info-portal">
+        <div class="separa">
+            <p class="text-md"><b>Bem Vindo {{usuario_atual}}</b></p>
+            <a href="/" class="button-portal">Voltar</a>
+        </div>
+        <p class="text-portal">Cargo: {{cargo}}</p>
+        <p class="text-portal">User: {{usuario_user}}</p>
+    </div>
+
 </div>
 
-
-<section id="home-servicos">
-    <div class="container">
-        <p data-aos="fade-up" data-aos-duration="600" class="center text-high aos-init">
-            <span class="text-lg">Lista de Usuarios</span>
-        </p>
-        <div class="servicos-content">
-            <table>
-                <tr>
-                    <th>ID</th>
-                    <th>Nome</th>
-                    <th>User</th>
-                    <th>Cargo</th>
-                    <th>Opções</th>
-                </tr>
-                {{#usuarios}}
-                <tr>
-                    <th>{{id_usuario}}</th>
-                    <th>{{nome}}</th>
-                    <th>{{usuario}}</th>
-                    <th>{{cargo}}</th>
-                    <th>
-                        <button type="button" class="btn btn-entrar">Baixar</button>
-                        
-                    </th>
-                </tr>
-                {{/usuarios}}
-            </table>
-        </div>
+<div class="fundo-portal container-portal">
+    <div class="separa">
+        <p class="text-md"><b>{{listagem}}</b></p>
+        <a href="/cadastro" class="button-portal">Novo</a>
     </div>
-</section>
+
+    <div class="servicos-content">
+        <table class="tabela">
+            <tr>
+                <th>Nome</th>
+                <th>Cargo</th>
+                <th></th>
+            </tr>
+            {{#usuarios}}
+            <tr>
+                <td>{{nome}}</td>
+                <td>{{cargo}}</td>
+                <td>
+                    <form action="/usuario" method="POST">
+                        <input type="hidden" name="id_usuario" value="{{id_usuario}}">
+                        <input type="hidden" name="cargo_atual" value="{{cargo}}">
+                        <button type="submit" class="link-portal">Mais Informações...</button>
+                    </form>
+
+                </td>
+            </tr>
+            {{/usuarios}}
+
+
+        </table>
+    </div>
+</div>

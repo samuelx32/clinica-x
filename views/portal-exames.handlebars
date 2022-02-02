@@ -1,0 +1,41 @@
+<div class="fundo-portal container-portal">
+
+    <div class="info-portal">
+        <div class="separa">
+            <p class="text-md">Seus Exames</p>
+            <a href="/" class="button-portal">Voltar</a>
+        </div>
+    </div>
+
+
+    <div class="servicos-content">
+        <table class="tabela">
+            <tr>
+                <th>Exame</th>
+                <th>Tipo</th>
+                <th>Data</th>
+                <th></th>
+            </tr>
+            {{#exames}}
+            <tr>
+                <td>{{nome}}</td>
+                <td>{{tipo}}</td>
+                <td>{{data}}</td>
+                <td>
+                    <div class="botoes-portal">
+                        <form method="POST" action="/pdf-page">
+                            <input type="hidden" name="pdf" value="{{pdf}}">
+                            <button type="submit" class="icone-button">
+                                Vizualizar/Imprimir
+                            </button>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+            {{/exames}}
+
+
+        </table>
+
+    </div>
+</div>
